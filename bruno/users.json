@@ -1,0 +1,232 @@
+{
+  "name": "users",
+  "version": "1",
+  "items": [
+    {
+      "type": "http",
+      "name": "Add user",
+      "seq": 3,
+      "request": {
+        "url": "http://localhost:8082/api/users",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"username\":\"de11f\",\n  \"email\":\"def11@def.com\",\n  \"password\":\"123\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "bearer",
+          "bearer": {
+            "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmMiLCJpYXQiOjE3Mjg3NjkxODEsImV4cCI6MTcyODg1NTU4MX0.o7pG9AldQ6n9SU-th1IeM0OPVvRgeocwp_3i9rGNf18"
+          }
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "Delete user",
+      "seq": 6,
+      "request": {
+        "url": "http://localhost:8082/api/users/1",
+        "method": "DELETE",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"first_name\":\"abc3\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "Get users",
+      "seq": 2,
+      "request": {
+        "url": "http://localhost:8080/api/users",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "bearer",
+          "bearer": {
+            "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmMiLCJpYXQiOjE3Mjg3OTgyMTAsImV4cCI6MTcyODg4NDYxMH0.bqKGE__uscYKrTugQacK0TZvbu9mvZAzSlc78IApXok"
+          }
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "Patch user",
+      "seq": 5,
+      "request": {
+        "url": "http://localhost:8082/api/users/1",
+        "method": "PATCH",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"email\":\"abc1@def.com\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "bearer",
+          "bearer": {
+            "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmMiLCJpYXQiOjE3Mjg3Njk3MDEsImV4cCI6MTcyODg1NjEwMX0.68kHYyrLFZUc64id5wXzNwjJcX8tipwKk7xawb5_wBI"
+          }
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "Sign in",
+      "seq": 8,
+      "request": {
+        "url": "http://localhost:8080/api/auth/signin",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"username\":\"abc\",\n  \"password\":\"123\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "Sign up",
+      "seq": 7,
+      "request": {
+        "url": "http://localhost:8082/api/auth/signup",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"username\":\"abc\",\n  \"email\":\"abc@def.com\",\n  \"password\":\"123\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "none"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "Test auth",
+      "seq": 9,
+      "request": {
+        "url": "http://localhost:8082/api/test/user",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "bearer",
+          "bearer": {
+            "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmMiLCJpYXQiOjE3Mjg2ODQ1MDIsImV4cCI6MTcyODc3MDkwMn0.PZcKc7P9jaJicXUM1ufugtlZ5SnADbEBERTmIfdoOwU"
+          }
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "Update user",
+      "seq": 4,
+      "request": {
+        "url": "http://localhost:8082/api/users/1",
+        "method": "PUT",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"email\":\"abc@def.com\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "bearer",
+          "bearer": {
+            "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmMiLCJpYXQiOjE3Mjg3Njg3MTIsImV4cCI6MTcyODg1NTExMn0.qeqhWeaoNVFAFo9vP8n_giiP8fihedbmnnyqlOgxXYo"
+          }
+        }
+      }
+    }
+  ],
+  "environments": [],
+  "root": {
+    "request": {
+      "auth": {
+        "mode": "none"
+      }
+    },
+    "meta": {
+      "name": "users"
+    }
+  },
+  "brunoConfig": {
+    "version": "1",
+    "name": "users",
+    "type": "collection",
+    "ignore": [
+      "node_modules",
+      ".git"
+    ]
+  }
+}

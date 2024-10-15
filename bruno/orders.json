@@ -1,0 +1,160 @@
+{
+  "name": "produicts",
+  "version": "1",
+  "items": [
+    {
+      "type": "http",
+      "name": "Add order",
+      "seq": 3,
+      "request": {
+        "url": "http://localhost:8081/api/orders",
+        "method": "POST",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"user_id\": 1,\n  \"product\": \"Laptop\",\n  \"quantity\": 2,\n  \"price\": 434.00,\n  \"status\":\"new\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "bearer",
+          "bearer": {
+            "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmMiLCJpYXQiOjE3Mjg5MTk1MTAsImV4cCI6MTcyOTAwNTkxMH0.mM-phC091gIJCuQWcMKzS-eL45su_NU9fqXySrfnW4M"
+          }
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "Delete order",
+      "seq": 6,
+      "request": {
+        "url": "http://localhost:8081/api/orders/176",
+        "method": "DELETE",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"first_name\":\"abc3\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "bearer",
+          "bearer": {
+            "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmMiLCJpYXQiOjE3Mjg4MTM1MDEsImV4cCI6MTcyODg5OTkwMX0.rdLwsJxEKEq7RFXqT3UygKqANovmhzJGDNjayT8K1gg"
+          }
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "Get orders",
+      "seq": 2,
+      "request": {
+        "url": "http://localhost:8081/api/orders",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "bearer",
+          "bearer": {
+            "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmMiLCJpYXQiOjE3Mjg3Njk1MjMsImV4cCI6MTcyODg1NTkyM30.NyjUpaDdioNUnl7eyVy2RK3YhyAdwLJ30b9YAl-3W6s"
+          }
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "Patch order",
+      "seq": 5,
+      "request": {
+        "url": "http://localhost:8081/api/orders/176",
+        "method": "PATCH",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"product\":\"def11@def.com\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "bearer",
+          "bearer": {
+            "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmMiLCJpYXQiOjE3Mjg3Njk3MDEsImV4cCI6MTcyODg1NjEwMX0.68kHYyrLFZUc64id5wXzNwjJcX8tipwKk7xawb5_wBI"
+          }
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "Update order",
+      "seq": 4,
+      "request": {
+        "url": "http://localhost:8081/api/orders/176",
+        "method": "PUT",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"user_id\":1,\n  \"product\":\"def11@def.com\",\n  \"quantity\":1,\n  \"price\":1.123\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "auth": {
+          "mode": "bearer",
+          "bearer": {
+            "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmMiLCJpYXQiOjE3Mjg3Njg3MTIsImV4cCI6MTcyODg1NTExMn0.qeqhWeaoNVFAFo9vP8n_giiP8fihedbmnnyqlOgxXYo"
+          }
+        }
+      }
+    }
+  ],
+  "environments": [],
+  "root": {
+    "request": {
+      "auth": {
+        "mode": "none"
+      }
+    },
+    "meta": {
+      "name": "produicts"
+    }
+  },
+  "brunoConfig": {
+    "version": "1",
+    "name": "produicts",
+    "type": "collection",
+    "ignore": [
+      "node_modules",
+      ".git"
+    ]
+  }
+}
